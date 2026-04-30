@@ -1,0 +1,26 @@
+[
+  {
+    "control_id": "C1",
+    "name": "IT/OT Firewall",
+    "type": "Network Security",
+    "covers": ["T0817", "T0865", "T0814", "T0862"]
+  },
+  {
+    "control_id": "C2",
+    "name": "Application Whitelisting of SCADA",
+    "type": "Endpoint Security",
+    "covers": ["T0843", "T0809"]
+  },
+  {
+    "control_id": "C3",
+    "name": "Read-only access to historian",
+    "type": "Access Control",
+    "covers": ["T0810"]
+  },
+  {
+    "control_id": "C4",
+    "name": "Network Segmentation (DMZ)",
+    "type": "Network Security",
+    "covers": ["T0817", "T0814", "T0856"]
+  }
+]

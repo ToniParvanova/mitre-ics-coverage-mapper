@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ICS ATT&CK Coverage Mapper</title>
+  <script src="data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>MITRE ATT&CK for ICS Coverage Mapper</h1>
+<p class="sub">Gap Analysis · Sample OT Architecture (Water Treatment Station)</p>
+
+<div class="cards">
+  <div class="card full"><div class="num" id="c-full">-</div><div class="lbl">Full coverage</div></div>
+  <div class="card partial"><div class="num" id="c-partial">-</div><div class="lbl">Partial coverage</div></div>
+  <div class="card gap"><div class="num" id="c-gap">-</div><div class="lbl">No coverage (GAP)</div></div>
+  <div class="card score"><div class="num" id="c-score">-</div><div class="lbl">Coverage score</div></div>
+</div>
+
+<div class="row2">
+  <div class="box">
+    <h2>Controls & Detections</h2>
+    <p style="font-size:0.78rem;color:#aaa;margin-bottom:0.75rem">Uncheck what you don't have</p>
+    <div class="col2">
+      <div id="controls-list"></div>
+      <div id="detections-list"></div>
+    </div>
+  </div>
+  <div class="charts">
+    <div class="box">
+      <h2>Breakdown</h2>
+      <canvas id="pieChart"></canvas>
+    </div>
+    <div class="box">
+      <h2>Risk by technique</h2>
+      <canvas id="barChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<div class="box" style="margin-bottom:1.5rem">
+  <h2>Technique Coverage Table</h2>
+  <div class="toolbar">
+    <input type="text" id="search" placeholder="Search..." oninput="render()">
+    <select id="fStatus" onchange="render()">
+      <option value="">All statuses</option>
+      <option value="FULL">Full</option>
+      <option value="PARTIAL">Partial</option>
+      <option value="GAP">GAP</option>
+    </select>
+    <select id="fTactic" onchange="render()">
+      <option value="">All tactics</option>
+    </select>
+    <select id="fImpact" onchange="render()">
+      <option value="">All impacts</option>
+      <option value="Critical">Critical</option>
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+    </select>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th onclick="sortBy('ID')">ID</th>
+        <th onclick="sortBy('Technique')">Technique</th>
+        <th onclick="sortBy('Impact')">Impact</th>
+        <th>Controls</th>
+        <th>Detections</th>
+        <th onclick="sortBy('Status')">Status</th>
+        <th onclick="sortBy('Risk Score')">Risk</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
+<div class="box">
+  <h2>Critical Gaps</h2>
+  <div id="gapsSection"></div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

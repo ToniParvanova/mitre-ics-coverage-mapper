@@ -1,0 +1,26 @@
+[
+  {
+    "detection_id": "D1",
+    "name": "Windows Event Log (SCADA)",
+    "type": "Log Source",
+    "detects": ["T0817", "T0865", "T0843"]
+  },
+  {
+    "detection_id": "D2",
+    "name": "Zeek network monitoring",
+    "type": "Network IDS",
+    "detects": ["T0814", "T0856", "T0817"]
+  },
+  {
+    "detection_id": "D3",
+    "name": "PLC Audit Log",
+    "type": "OT Log Source",
+    "detects": ["T0809", "T0843"]
+  },
+  {
+    "detection_id": "D4",
+    "name": "Historian Access Log",
+    "type": "OT Log Source",
+    "detects": ["T0810", "T0801"]
+  }
+]

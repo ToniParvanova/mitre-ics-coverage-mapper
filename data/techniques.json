@@ -1,0 +1,65 @@
+[
+  {
+    "technique_id": "T0817",
+    "name": "Drive-by Compromise",
+    "tactic": "Initial Access",
+    "description": "Compromise of workstation or server through malicious website.",
+    "impact": "High"
+  },
+  {
+    "technique_id": "T0862",
+    "name": "Supply Chain Compromise",
+    "tactic": "Initial Access",
+    "description": "Infecting hardware or software before delivery.",
+    "impact": "Critical"
+  },
+  {
+    "technique_id": "T0865",
+    "name": "Spearphishing Attachment",
+    "tactic": "Initial Access",
+    "description": "Targeted phishing email to OT personnel.",
+    "impact": "High"
+  },
+  {
+    "technique_id": "T0810",
+    "name": "Data Historian Compromise",
+    "tactic": "Collection",
+    "description": "Attack against historian server for stealing process data.",
+    "impact": "High"
+  },
+  {
+    "technique_id": "T0801",
+    "name": "Monitor Process State",
+    "tactic": "Collection",
+    "description": "Passive monitoring of the industrial process.",
+    "impact": "Medium"
+  },
+  {
+    "technique_id": "T0843",
+    "name": "Program Download",
+    "tactic": "Execution",
+    "description": "Downloading malicious software to a PLC.",
+    "impact": "Critical"
+  },
+  {
+    "technique_id": "T0809",
+    "name": "Modify Controller Tasking",
+    "tactic": "Impair Process Control",
+    "description": "Modification of the logic in the PLC controller.",
+    "impact": "Critical"
+  },
+  {
+    "technique_id": "T0856",
+    "name": "Spoof Reporting Message",
+    "tactic": "Impair Process Control",
+    "description": "Sending fake data to the SCADA system.",
+    "impact": "High"
+  },
+  {
+    "technique_id": "T0814",
+    "name": "Denial of Service",
+    "tactic": "Inhibit Response Function",
+    "description": "Overloading the OT network or devices.",
+    "impact": "High"
+  }
+]
