@@ -34,7 +34,7 @@ The demo architecture models a **water treatment station** with 4 controls, 4 de
 |-------|-----------|
 | Data processing | Python 3 |
 | Data format | JSON |
-| Frontend | HTML, CSS, Vanilla JavaScript |
+| Frontend | HTML, CSS, JavaScript |
 | Charts | Chart.js |
 | ATT&CK framework | MITRE ATT&CK for ICS |
 
