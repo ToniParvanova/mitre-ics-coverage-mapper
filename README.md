@@ -1,6 +1,6 @@
 # MITRE ATT&CK for ICS - Coverage Mapper
 
-> An interactive gap analysis tool that maps ICS/OT security controls and detections against the MITRE ATT&CK for ICS matrix, identifying coverage gaps and calculating risk scores in real time.
+An interactive gap analysis tool that maps ICS/OT security controls and detections against the MITRE ATT&CK for ICS matrix, identifying coverage gaps and calculating risk scores in real time.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript&logoColor=white)
